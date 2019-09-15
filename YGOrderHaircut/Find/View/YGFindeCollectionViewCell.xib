@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YGFindeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="407"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="407"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="发现-头像" translatesAutoresizingMaskIntoConstraints="NO" id="fVK-B2-PrG">
+                        <rect key="frame" x="15" y="368" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="0zX-GH-K4N"/>
+                            <constraint firstAttribute="height" constant="24" id="DRG-cy-fig"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-Vx-Zia">
+                        <rect key="frame" x="218" y="370" width="38" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="16" image="zan">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clidk:" destination="gTV-IL-0wX" eventType="touchUpInside" id="CJM-Zp-kgf"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="美女" translatesAutoresizingMaskIntoConstraints="NO" id="26j-L0-AiK">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="330"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今年流行的青木灰色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umg-ea-Kf8">
+                        <rect key="frame" x="15" y="340" width="241" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="26j-L0-AiK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8gI-pO-nUb"/>
+                <constraint firstItem="umg-ea-Kf8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="HPX-QH-31d"/>
+                <constraint firstItem="26j-L0-AiK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lj8-8x-VK9"/>
+                <constraint firstItem="fVK-B2-PrG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="N9b-0f-edR"/>
+                <constraint firstAttribute="trailing" secondItem="g6u-Vx-Zia" secondAttribute="trailing" constant="15" id="Xyv-ku-NXQ"/>
+                <constraint firstAttribute="trailing" secondItem="26j-L0-AiK" secondAttribute="trailing" id="c6f-mn-aJM"/>
+                <constraint firstItem="g6u-Vx-Zia" firstAttribute="centerY" secondItem="fVK-B2-PrG" secondAttribute="centerY" id="cRz-JJ-ygO"/>
+                <constraint firstAttribute="trailing" secondItem="umg-ea-Kf8" secondAttribute="trailing" constant="15" id="oXl-6a-F5H"/>
+                <constraint firstItem="fVK-B2-PrG" firstAttribute="top" secondItem="umg-ea-Kf8" secondAttribute="bottom" constant="10" id="qR6-u1-ZIU"/>
+                <constraint firstItem="umg-ea-Kf8" firstAttribute="top" secondItem="26j-L0-AiK" secondAttribute="bottom" constant="10" id="uOy-1C-5CQ"/>
+                <constraint firstAttribute="bottom" secondItem="fVK-B2-PrG" secondAttribute="bottom" constant="15" id="xjW-Uk-X27"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="271" height="407"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="headimg" destination="fVK-B2-PrG" id="3na-dh-pJn"/>
+                <outlet property="mainImg" destination="26j-L0-AiK" id="k4t-a2-W2e"/>
+                <outlet property="tips" destination="umg-ea-Kf8" id="lCj-wQ-w5j"/>
+                <outlet property="zanCount" destination="g6u-Vx-Zia" id="uvk-jH-Nyg"/>
+            </connections>
+            <point key="canvasLocation" x="-418" y="136"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="zan" width="20" height="20"/>
+        <image name="发现-头像" width="22" height="22"/>
+        <image name="美女" width="166" height="173"/>
+    </resources>
+</document>
